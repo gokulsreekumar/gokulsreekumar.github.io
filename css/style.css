@@ -23,6 +23,7 @@ Used for solving a problem with how padding is calculated
     /* colours */
     --clr-light: #fff;
     --clr-dark: #303030;
+    /* --clr-accent: #ff0077; */
     --clr-accent: #16e0bd;
     --clr--accent-dark: rgb(3, 139, 121);
     
@@ -402,7 +403,8 @@ h3 { font-size: var(--fs-h3) }
         grid-template-areas: 
         "title img"
         "subtitle img"
-        "text img";
+        "text img"
+        "text button";
         column-gap: 2em;
     }
 
@@ -428,6 +430,13 @@ h3 { font-size: var(--fs-h3) }
 
     .about-me__img {
         grid-area: img;
+    }
+    .about_me__btn {
+        grid-area: button;
+        align-items: center;
+    }
+    .about_me__btn .btn {
+        border-radius: 0px;
     }
 }
 
