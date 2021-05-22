@@ -166,6 +166,12 @@ h3 { font-size: var(--fs-h3) }
     padding-top: 1.75rem;
 }
 
+.log__img__expanded {
+    display: none;
+}
+/* .log__img__short {
+    display: none;
+} */
 
 .nav {
     position: fixed;
@@ -288,6 +294,14 @@ h3 { font-size: var(--fs-h3) }
         grid-template-columns: min-content max-content; 
         /* make image smaller(will set min size for image(not to make it disappear)) and make text as large as possible */
     }
+
+    .log__img__expanded {
+        display: inline-block;
+    }
+
+    .log__img__short {
+        display: none;
+    } 
 
     .intro__img {
         grid-area: img;
