@@ -23,8 +23,11 @@ Used for solving a problem with how padding is calculated
     /* colours */
     --clr-light: #fff;
     --clr-dark: #303030;
-    /* --clr-accent: #ff0077; */
     --clr-accent: #16e0bd;
+    --clr-accent1: #16e0bd;
+    --clr-accent2: #f85880;
+    --clr-accent3: #53baff;
+
     --clr--accent-dark: rgb(3, 139, 121);
     
     /* fonst sizes */
@@ -198,9 +201,10 @@ h3 { font-size: var(--fs-h3) }
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
+    padding-left:1.5em;
 }
 
 .nav__link {
@@ -242,14 +246,33 @@ h3 { font-size: var(--fs-h3) }
 
 
 .hamburger i {
-    color: var(--clr--accent-dark);
+    color: var(--clr-accent);
     font-size: var(--fs-h3);
 }
 
+@media (min-width: 100px) {
+    .nav-open .nav {
+        transform: translateX(40%);
+    }
+} 
+@media (min-width: 600px) {
+    .nav-open .nav {
+        transform: translateX(50%);
+    }
+} 
 
-.nav-open .nav {
-    transform: translateX(0);
-}
+@media (min-width: 1000px) {
+    .nav-open .nav {
+        transform: translateX(70%);
+    }
+} 
+
+@media (min-width: 1600px) {
+    .nav-open .nav {
+        transform: translateX(80%);
+    }
+} 
+
 
 .nav-open .nav-toggle {
     position: fixed;
@@ -260,6 +283,41 @@ h3 { font-size: var(--fs-h3) }
 }
 .nav-open .nav-toggle__close {
     display: block;
+}
+
+
+/* color buttons */
+.nav__color_btns {
+    display: flex;
+    margin:0;
+    padding-top: 1em;
+    padding-left: 3.25em;
+}
+
+.nav__color_btn1 {
+    color: var(--clr-accent1);
+    border: 0;
+    background: transparent;
+}
+.nav__color_btn2 {
+    color: var(--clr-accent2);
+    border: 0;
+    background: transparent;
+}
+.nav__color_btn3 {
+    color: var(--clr-accent3);
+    border: 0;
+    background: transparent;
+}
+
+.accent1 {
+    --clr-accent: var(--clr-accent1);
+}
+.accent2 {
+    --clr-accent: var(--clr-accent2);
+}
+.accent3 {
+    --clr-accent: var(--clr-accent3);
 }
 
 
