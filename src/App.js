@@ -5,7 +5,6 @@ import LikeButton from './Components/LikeButton';
 import Logo from './Components/Logo.jsx'
 import NavComponent from './Components/NavComponent';
 
-
 class App extends React.Component {
     render() {
         return (
@@ -159,6 +158,7 @@ class App extends React.Component {
                         >
                             see my resume
                         </a>
+                        
                     </div>
                 </section>
 
@@ -252,8 +252,6 @@ class App extends React.Component {
                         </a>
                     </div>
                 </section>
-                
-                <LikeButton numberOfLikes={100} />
 
                 <footer id="get-in-touch" className="footer">
                     <p>
@@ -294,6 +292,7 @@ class App extends React.Component {
                             </a>
                         </li>
                     </ul>
+                    <LikeButton numberOfLikes={99} />
                 </footer>
 
                 {/* End of import from My Static Page */}
