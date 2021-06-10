@@ -1,17 +1,21 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
-import ColourButtons from './Components/ColourButtons';
-import LikeButton from './Components/LikeButton';
-import Logo from './Components/Logo.jsx'
-import NavComponent from './Components/NavComponent';
+import ColourButtons from "./Components/ColourButtons";
+import LikeButton from "./Components/LikeButton";
+import Logo from "./Components/Logo.jsx";
+import NavComponent from "./Components/NavComponent";
 
+// TODO: Check how to add images 
 class App extends React.Component {
     render() {
         return (
             <div className="App">
                 {/* Imported from My Static Page */}
                 <header>
-                    <Logo srcSmall="../img/gsree.png" srcLarge="../img/gokulsreekumar.png"/>
+                    <Logo
+                        srcSmall="./img/gsree.png"
+                        srcLarge="./img/gokulsreekumar.png"
+                    />
                     <ColourButtons />
                     <NavComponent />
                 </header>
@@ -158,7 +162,6 @@ class App extends React.Component {
                         >
                             see my resume
                         </a>
-                        
                     </div>
                 </section>
 
