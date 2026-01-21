@@ -4,213 +4,627 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-
+  <meta name="description" content="Gokul Sreekumar - Software Engineer at Goldman Sachs specializing in trading platforms, event-driven architectures, and AI-enabled solutions.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
-  <title>Gokul Sreekumar</title>
+  
+  <title>Gokul Sreekumar | Software Engineer</title>
 
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <!-- <img class="log__img__expanded" src="img/gokulsreekumar.png" alt="" /> -->
-      <!-- <img class="log__img__short" src="img/gsree.png" alt="" /> -->
-      <h3><span style="color:  var(--clr-accent);">&lt;</span> <span>gokul</span><span
-          style="color:  var(--clr-accent);">.</span><span>sree</span> <span style="color:  var(--clr-accent);">/&gt;</span></h3>
-    </div>
-    <div class="nav__color_btns">
-      <button class="nav__color_btn1">
-        <i class="fas fa-circle"></i>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">gokul.sree</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
       </button>
-      <button class="nav__color_btn2">
-        <i class="fas fa-circle"></i>
-      </button>
-      <button class="nav__color_btn3">
-        <i class="fas fa-circle"></i>
-      </button>
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger">
-        <i class="fas fa-bars nav-toggle__open"></i>
-        <i class="fas fa-times nav-toggle__close"></i>
-      </span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#home" class="nav__link">Home</a>
-        </li>
-        <li class="nav__item">
-          <a href="#services" class="nav__link">Skillset</a>
-        </li>
-        <li class="nav__item">
-          <a href="#hobbies" class="nav__link">Hobbies</a>
-        </li>
-        <li class="nav__item">
-          <a href="#get-in-touch" class="nav__link">Contact</a>
-        </li>
+      
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#hobbies" class="nav-link">Beyond Code</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <!-- Introduction -->
-  <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">
-      Hello, I am <strong>Gokul Sreekumar</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro">
-      I code and do computer stuff.
-    </p>
-    <img class="intro__img" src="img/Gokul_Profile.jpg" alt="a picture of me smiling"
-      style="max-width: 200px; margin: 30px" />
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hey there! I'm</p>
+        <h1 class="hero-name">Gokul Sreekumar</h1>
+        <h2 class="hero-title">Software Engineer <span class="hero-company">@ Goldman Sachs</span></h2>
+        <p class="hero-description">
+          Building trading platforms and event-driven systems that power global markets. 
+          Passionate about backend engineering, AI/ML, and solving complex distributed systems challenges.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="https://drive.google.com/file/d/1ec_1gGzT5cgrvG91z2KL9QdzqpOHmtgB/view" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-file-pdf"></i> Resume
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/gokulsreekumar" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/gokul-sreekumar-63581b174" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:gokulsreekumar2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com/gokulsree_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="img/Gokul_Profile.jpg" alt="Gokul Sreekumar" />
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
   </section>
-  <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">
-      Decked Out with
-    </h2>
-    <!-- container of what i do items -->
-    <div class="services">
-      <div class="service">
-        <h3>Backend Dev & Design</h3>
-        <p>
-          I create, maintain, test and debug the core application logic API integration and other back end processes.
-          <br>
-          Focus on databases, scripting, and the architecture of websites.
-        </p>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="title-underline"></div>
       </div>
-      <!-- what i do item end -->
-      <div class="service">
-        <h3>ML & Ai</h3>
-        <p>
-          I build, train and tweak ML and Ai models as well. <br>
-          Experience in working with Random Forests, ANNs, CNNs, Bagging and Boosting techniques.
-        </p>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-intro">
+            I'm a software engineer with a passion for building robust, scalable systems that make a real impact. 
+            Currently working at <strong>Goldman Sachs</strong>, I specialize in creating trading and booking platforms 
+            that handle complex financial workflows across global markets.
+          </p>
+          <p>
+            My expertise lies in <strong>backend development</strong>, <strong>distributed systems</strong>, and 
+            <strong>event-driven architectures</strong>. I love diving deep into challenging problems—whether 
+            it's designing a multi-market trading platform or building AI-powered tools to streamline development workflows.
+          </p>
+          <p>
+            From NIT Calicut to Wall Street tech, I've been on an exciting journey. I've built everything from 
+            educational database systems from scratch to production-grade RAG platforms. I'm always learning, 
+            always building, and always looking for the next challenge.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bengaluru, India</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>NIT Calicut, CS '22</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-briefcase"></i>
+              <span>3+ years experience</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- what i do item end -->
-      <div class="service">
-        <h3>Problem Solving</h3>
-        <p>
-          With a strong underpinnings in data structures and algorithms, and a drive I solve complex problem, <br>
-          I do find myself solving questions from LeetCode and AlgoExpert as a hobby.
-        </p>
-      </div>
-      <!-- what i do item end -->
     </div>
-    <a href="https://drive.google.com/file/d/1ec_1gGzT5cgrvG91z2KL9QdzqpOHmtgB/view?usp=share_link" class="btn">see my
-      resume</a>
-    <!-- https://drive.google.com/file/d/1GOLt4R7tOdw0fmcBRKbLuAENCVyDxkR5/view?usp=sharing -->
   </section>
-  <section">
-    <br>
-    <br>
-    <h2 id="hobbies" style="text-align: center;">
-      talkin about hobbies...
-    </h2>
-    <p style="justify-content: center"> My new substack post is out! go an checkout below. </p>
-<section style="
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-">
-  <div class="substack-post-embed" style="flex: 1 1 300px; max-width: 350px;">
-    <p lang="en">Sliding Window Technique: DSA Mental Frameworks Series by That Nice Programmer</p>
-    <p>Understanding frameworks for solving DSA problems! A one-stop guide to get started on Sliding Windows</p>
-    <a data-post-link href="https://gokulsree.substack.com/p/sliding-window-technique-dsa-mental">Read on Substack</a>
-  </div>
-  
-  <div class="substack-post-embed" style="flex: 1 1 300px; max-width: 350px;">
-    <p lang="en">How to Organize Tasks and Knowledge in Work Daily by That Nice Programmer</p>
-    <p>A clear, actionable guide with practical examples for software developers aiming to become the go-to expert.</p>
-    <a data-post-link href="https://gokulsree.substack.com/p/how-to-organize-tasks-and-knowledge">Read on Substack</a>
-  </div>
-  
-  <div class="substack-post-embed" style="flex: 1 1 300px; max-width: 350px;">
-    <p lang="en">"Is this all there is?" - Finding meaning in life by That Nice Programmer</p>
-    <p>null</p>
-    <a data-post-link href="https://gokulsree.substack.com/p/is-this-all-there-is-finding-meaning">Read on Substack</a>
-  </div>
-  
-  <script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
-</section>
-    <br>
-    <br>
-    <div class="services">
-      <div class="service">
-        <h3>Youtube</h3>
-        <p>
-          I watch videos a lot. Primarily my interests are bleeding edge technologies, urban planning & transportation,
-          design in general, travel & adventures,
-          and learning about far away lands & culture.
-        </p>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="title-underline"></div>
       </div>
-      <!-- what i do item end -->
-      <div class="service">
-        <h3>I love Maps and Design</h3>
-        <p>
-          I enjoy spending hours and hours on Google earth, understanding the geography of places and how politics and
-          history
-          shape the modern architecture and borders,
-          the colonization of west, exquisite culture of japan & asia and much more.
-        </p>
-      </div>
-      <div class="service">
-        <h3>and the usual ... </h3>
-        <p>
-          photography, movies, games, music and books.
-        </p>
+      
+      <div class="timeline">
+        <!-- Current Role -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Associate (Software Engineer II)</h3>
+              <span class="timeline-company">Goldman Sachs</span>
+              <span class="timeline-date">Nov 2024 - Present</span>
+            </div>
+            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+            <ul class="timeline-responsibilities">
+              <li>Led end-to-end delivery of a <strong>cross-market equities trading platform</strong>, extending US-only system to top 10 Asian markets for UHNW sales desks</li>
+              <li>Owned full SDLC: requirements, architecture, development, testing, and production rollout across Sales, Global Markets, and Books & Records teams</li>
+              <li>Implemented <strong>FIX protocol integrations</strong> for order placement, executions, partial fills, and average-price allocations with complex booking workflows</li>
+              <li>Built backend services using <strong>Spring Boot + Kafka</strong> event-driven architecture and contributed to React-based order-entry UI</li>
+              <li>Leveraged <strong>AI/LLMs</strong> for requirements analysis, debugging, and automated Spring framework migration</li>
+              <li>Contributed to internal <strong>AI-driven data platforms</strong> with semantic search, RAG, and LLM-assisted SQL generation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Previous Role -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Analyst (Software Engineer I)</h3>
+              <span class="timeline-company">Goldman Sachs</span>
+              <span class="timeline-date">Jun 2022 - Oct 2024</span>
+            </div>
+            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+            <ul class="timeline-responsibilities">
+              <li>Modernized <strong>derivatives booking pipelines</strong> by eliminating legacy flows and migrating to JMS-based ingestion with robust validation</li>
+              <li>Built <strong>MongoDB-backed staging layer</strong> improving traceability and enabling complex cash/equities movement workflows</li>
+              <li>Re-architected file-based booking system with extensible framework supporting Excel, CSV, TSV formats with plug-and-play parsers</li>
+              <li>Integrated with secure firmware platform for external institutional clients</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Internship -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Summer Analyst Intern</h3>
+              <span class="timeline-company">Goldman Sachs</span>
+              <span class="timeline-date">Jun 2021 - Jul 2021</span>
+            </div>
+            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+            <ul class="timeline-responsibilities">
+              <li>Designed pre-trade disclosure document delivery workflow using <strong>Java and Spring</strong></li>
+              <li>Integrated REST services and messaging components for front-office systems</li>
+              <li>Gained exposure to regulatory constraints and financial systems architecture</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Side projects and open-source contributions that I'm proud of</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- DataDistillerAI -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">DataDistillerAI</h3>
+          <p class="project-description">
+            End-to-end RAG system for knowledge exploration with semantic search, vector indexing, and LLM-powered analysis. 
+            Built with FastAPI, Kafka, FAISS, and LangChain.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Kafka</span>
+            <span class="tech-tag">FAISS</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <ul class="project-highlights">
+            <li>Async ingestion pipeline with Kafka queues for horizontal scaling</li>
+            <li>Vector search with FAISS to ground LLM responses and reduce hallucinations</li>
+            <li>Multi-LLM backend support (OpenAI/Ollama/Gemini/Claude)</li>
+          </ul>
+        </div>
+
+        <!-- NITCBase -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">NITCBase</h3>
+          <p class="project-description">
+            Educational relational database system built from scratch to demonstrate RDBMS internals including 
+            storage, indexing, query execution, and transaction handling.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">C</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Docusaurus</span>
+          </div>
+          <ul class="project-highlights">
+            <li>Comprehensive documentation with step-by-step implementation guides</li>
+            <li>Adopted into DBMS curriculum at NIT Calicut</li>
+            <li>Covers B+ trees, buffer management, and query optimization</li>
+          </ul>
+        </div>
+
+        <!-- eXpOs -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">eXpOs</h3>
+          <p class="project-description">
+            Experimental operating system for simulated XSM machine, implementing kernel components 
+            including interrupts, system calls, paging, and file I/O.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">C</span>
+            <span class="tech-tag">Assembly</span>
+            <span class="tech-tag">OS Internals</span>
+          </div>
+          <ul class="project-highlights">
+            <li>Complete kernel implementation from bootloader to process scheduling</li>
+            <li>Memory management with paging and virtual memory</li>
+            <li>File system with disk I/O and user authentication</li>
+          </ul>
+        </div>
+
+        <!-- Kerberos -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Kerberos Authentication</h3>
+          <p class="project-description">
+            RFC-based implementation of the Kerberos authentication protocol with ticket-granting flows, 
+            message formats, and cryptographic exchanges.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Networking</span>
+            <span class="tech-tag">Cryptography</span>
+          </div>
+          <ul class="project-highlights">
+            <li>Multi-VM test setup simulating protocol participants</li>
+            <li>Validated through controlled attack scenarios</li>
+            <li>Complete implementation following RFC specifications</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Technologies and tools I work with daily</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-server"></i>
+            <h3>Backend & Distributed Systems</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Apache Kafka</span>
+            <span class="skill-tag">JMS</span>
+            <span class="skill-tag">Event-driven Architecture</span>
+            <span class="skill-tag">FIX Protocol</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-database"></i>
+            <h3>Databases & Storage</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">DynamoDB</span>
+            <span class="skill-tag">GemFire (OQL)</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud & Infrastructure</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS (EC2, S3, IAM)</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Argo CD</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-brain"></i>
+            <h3>AI/ML & Developer Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">LLMs (GPT, Claude)</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">OpenAI APIs</span>
+            <span class="skill-tag">RAG Systems</span>
+            <span class="skill-tag">FAISS</span>
+            <span class="skill-tag">Model Context Protocols</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-tools"></i>
+            <h3>DevOps & Observability</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">GitLab CI/CD</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">PagerDuty</span>
+            <span class="skill-tag">JIRA</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications">
+        <h3 class="certifications-title">Certifications</h3>
+        <div class="cert-list">
+          <div class="cert-item">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Generative AI with Large Language Models</strong>
+              <span>DeepLearning.AI (AWS Team) - June 2025</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Deep Learning Specialization</strong>
+              <span>DeepLearning.AI (Andrew Ng) - August 2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-    <!-- Get in Touch Section
+  </section>
 
-    <!-- Footer  -->
-    <!-- Footer -->
-    <footer id="get-in-touch" class="footer">
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="mailto:gokulsreekumar2@gmail.com" class="footer__link"> <i class="fas fa-envelope"></i>
-            </i>
-          </a>
+  <!-- Hobbies/Beyond Code Section -->
+  <section class="hobbies" id="hobbies">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Beyond Code</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">When I'm not building software, you'll find me...</p>
+      </div>
+      
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3>Reading & Writing</h3>
+          <p>
+            Avid reader with an active Goodreads profile. I also write technical and philosophical pieces 
+            on Substack exploring everything from DSA mental frameworks to finding meaning in life.
+          </p>
+        </div>
 
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.linkedin.com/in/gokul-sreekumar-63581b174/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/gokulsreekumar">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.instagram.com/gokulsree_/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-      <br>(+91)-85470-58985
-    </footer>
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-swimming-pool"></i>
+          </div>
+          <h3>Swimming</h3>
+          <p>
+            Born and raised near Kovalam beach in Kerala, I'm a water person at heart. 
+            Try to beat me in a swimming contest—you'll have a hard time!
+          </p>
+        </div>
 
-    <script src="js/index.js"></script>
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-running"></i>
+          </div>
+          <h3>Running</h3>
+          <p>
+            Regular runner who finds clarity and peace in those early morning miles. 
+            It's my meditation and my challenge rolled into one.
+          </p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <h3>Hiking & Travel</h3>
+          <p>
+            From the Himalayas to Kudremukh in Karnataka, I love exploring mountains and trails. 
+            There's something magical about standing at a summit after a challenging climb.
+          </p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3>Geography & Maps</h3>
+          <p>
+            Fascinated by how geography shapes culture and history. I can spend hours on Google Earth 
+            exploring how politics, colonization, and culture shaped modern borders and architecture.
+          </p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>
+            Beyond work, I enjoy tackling algorithmic challenges on LeetCode and AlgoExpert. 
+            Strong foundations in data structures and a genuine love for elegant solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Substack Section -->
+      <div class="substack-section">
+        <h3 class="substack-title">Latest from Substack</h3>
+        <p class="substack-subtitle">Technical insights and life reflections</p>
+        <div class="substack-grid">
+          <div class="substack-post-embed">
+            <p lang="en">Sliding Window Technique: DSA Mental Frameworks Series by That Nice Programmer</p>
+            <p>Understanding frameworks for solving DSA problems! A one-stop guide to get started on Sliding Windows</p>
+            <a data-post-link href="https://gokulsree.substack.com/p/sliding-window-technique-dsa-mental">Read on Substack</a>
+          </div>
+          
+          <div class="substack-post-embed">
+            <p lang="en">How to Organize Tasks and Knowledge in Work Daily by That Nice Programmer</p>
+            <p>A clear, actionable guide with practical examples for software developers aiming to become the go-to expert.</p>
+            <a data-post-link href="https://gokulsree.substack.com/p/how-to-organize-tasks-and-knowledge">Read on Substack</a>
+          </div>
+          
+          <div class="substack-post-embed">
+            <p lang="en">"Is this all there is?" - Finding meaning in life by That Nice Programmer</p>
+            <p>Exploring existential questions and finding purpose in our daily work and life.</p>
+            <a data-post-link href="https://gokulsree.substack.com/p/is-this-all-there-is-finding-meaning">Read on Substack</a>
+          </div>
+        </div>
+        <script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Always open to interesting conversations, collaboration opportunities, or just a friendly chat!
+        </p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:gokulsreekumar2@gmail.com">gokulsreekumar2@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <a href="tel:+918547058985">+91 85470 58985</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <h3>Find me online</h3>
+          <div class="social-links">
+            <a href="https://github.com/gokulsreekumar" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/gokul-sreekumar-63581b174" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/gokulsree_/" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://gokulsree.substack.com" target="_blank" class="social-link">
+              <i class="fas fa-pen"></i>
+              <span>Substack</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Built by <strong>Gokul Sreekumar</strong>
+      </p>
+      <p class="footer-copyright">
+        © 2026 All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
