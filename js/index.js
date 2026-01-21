@@ -85,18 +85,17 @@ document.querySelectorAll('.project-card, .hobby-card, .skill-category, .timelin
 
 // Navbar background on scroll
 const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+
+    if (currentScroll > 80) {
+        navbar.style.background = 'rgba(10, 16, 32, 0.7)';
+        navbar.style.boxShadow = '0 16px 40px rgba(8, 15, 40, 0.35)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+        navbar.style.background = 'rgba(10, 16, 32, 0.45)';
+        navbar.style.boxShadow = 'none';
     }
-    
-    lastScroll = currentScroll;
 });
 
 console.log('🚀 Portfolio loaded successfully!');
