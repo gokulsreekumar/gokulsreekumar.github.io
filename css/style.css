@@ -364,6 +364,8 @@ body.nav-open .hamburger::after {
     align-items: center;
     justify-content: center;
     padding-top: 6rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -450,7 +452,7 @@ body.nav-open .hamburger::after {
 
 .image-wrapper {
     position: relative;
-    max-width: 420px;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -484,6 +486,80 @@ body.nav-open .hamburger::after {
     color: var(--text-muted);
     font-size: var(--fs-2xl);
     animation: bounce 2s infinite;
+}
+
+/* Ambient Glass Elements */
+.ambient {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.glass-orb,
+.glass-doodle {
+    position: absolute;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    animation: float 8s ease-in-out infinite;
+}
+
+.orb-1 {
+    width: 180px;
+    height: 180px;
+    top: 8%;
+    left: 6%;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 120px;
+    height: 120px;
+    top: 18%;
+    right: 8%;
+    animation-delay: 1s;
+}
+
+.orb-3 {
+    width: 220px;
+    height: 220px;
+    bottom: 10%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.orb-4 {
+    width: 90px;
+    height: 90px;
+    bottom: 20%;
+    left: 12%;
+    animation-delay: 3s;
+}
+
+.doodle-arrow {
+    width: 180px;
+    height: 8px;
+    top: 55%;
+    left: 35%;
+    border-radius: var(--radius-full);
+    transform: rotate(-12deg);
+}
+
+.doodle-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    bottom: 28%;
+    left: 45%;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-12px) translateX(6px); }
 }
 
 @keyframes bounce {
@@ -826,6 +902,55 @@ body.nav-open .hamburger::after {
 .substack-post-embed p:nth-child(2) {
     color: var(--text-secondary);
     font-size: var(--fs-sm);
+}
+
+/* Goodreads */
+.goodreads-section {
+    margin-top: var(--spacing-3xl);
+}
+
+.goodreads-title {
+    text-align: center;
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-semibold);
+}
+
+.goodreads-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin: var(--spacing-sm) 0 var(--spacing-xl);
+}
+
+.goodreads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.goodreads-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.goodreads-book {
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.goodreads-review {
+    color: var(--text-secondary);
+    font-size: var(--fs-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.goodreads-link {
+    font-size: var(--fs-sm);
+    color: var(--accent-primary);
 }
 
 /* Contact */
